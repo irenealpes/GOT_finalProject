@@ -7,8 +7,8 @@
             </svg>
         </div>
         <div v-if="error" class="text-red-500"> {{error}} </div>
-        <div v-if="data">
-            <div v-for="book in data" :key="book.url">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-6 px-3 pt-6" v-if="data">
+            <div class="m-8 w-72 h-52 flex items-center justify-center border rounded-lg bg-yellow-300/10 shadow-md shadow-yellow-100 text-xl font-bold" v-for="book in data" :key="book.url">
                 <RouterLink :to="`/books/${getId(book.url)}`">{{book.name}}</RouterLink>
         </div>
 

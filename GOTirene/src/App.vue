@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col items-center">
-    <h1 class="p-8 text-2xl font-bold text-white">GAME OF THRONES BOOKS</h1>
+    <img class="p-8" src="../src/assets/images/34b7c9eb9be92738f3f4d3175d5bedcc.png" alt="">
     <RouterView />
 
   </div>

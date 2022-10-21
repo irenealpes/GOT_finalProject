@@ -8,13 +8,26 @@
     </div>
     <div v-if="error" class="text-red-500"> {{error}} </div>
     <div v-if="data">
-        <h2>{{data.name}}</h2>
+    <h2 class="font-bold text-yellow-500">{{data.name}}</h2>
+        <div class="grid grid-cols-2 w-full gap-6 px-3 pt-6">
+            <img :src="getUrl" alt="">  
+            <div class="text-left">
+                <p>Author: {{data.authors[0]}}</p>
+                <p>Number of book: {{$route.params.id}}</p>
+                <p>Number of pages: {{data.numberOfPages}}</p>
+                <p>Year of release: {{data.released.split("-")[0]}}</p> 
+                <p>Synopsis: {{getSynopsis}}</p>
+            </div>
+        </div>
+        
     </div>
     </main>
 </template>
 
 <script>
 import axios from "axios";
+import dbBooks from "../utils/db.js"
+
 export default {
     data() {
      return {
@@ -38,6 +51,15 @@ export default {
     },
     mounted(){
         this.getBook();
+    },
+
+    computed: {
+        getUrl() {
+            return dbBooks.find(element => element.id == this.$route.params.id).url 
+        },
+        getSynopsis() {
+            return dbBooks.find(element => element.id == this.$route.params.id).synopsis
+        },
     }
 };
 
