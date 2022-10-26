@@ -7,9 +7,12 @@ This template should help get you started developing with Vue 3 in Vite. The tem
 - [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
 
 ## User Flow Diagram
-![GOTirene](/react-fe-1-GOT-finalProject-irenealpes/GOTirene/src/assets/images/Screenshot%202022-10-21%20at%2017.35.56.png) 
+![GOTirene](https://github.com/irenealpes/GOT_finalProject/blob/main/GOTirene/src/assets/images/Screenshot%202022-10-21%20at%2017.35.56.png) 
 
 ## Design Drawing 
+![GOTirene](https://github.com/irenealpes/GOT_finalProject/blob/main/GOTirene/src/assets/images/Screenshot%202022-10-21%20at%2017.52.19.png)
+
+![GOTirene](https://github.com/irenealpes/GOT_finalProject/blob/main/GOTirene/src/assets/images/Screenshot%202022-10-21%20at%2017.54.47.png)
 
 ## Credit Statement
 _This is a student project that was created at [CodeOp](http://codeop.tech), a full stack development bootcamp in Barcelona._
